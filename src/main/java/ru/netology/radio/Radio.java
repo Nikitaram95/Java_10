@@ -1,9 +1,10 @@
 package ru.netology.radio;
 
 public class Radio {
-    public int currentVolume;
-    public int currentStation;
-    public int currentVolumeMax;
+    private int currentVolume;
+    private int currentStation;
+    private int currentVolumeMax;
+
     public int getCurrentStation() {
         return currentStation;
     }
@@ -27,7 +28,7 @@ public class Radio {
             return;
         }
         if (currentVolume > 10) {
-           return;
+            return;
         }
         this.currentVolume = currentVolume;
     }
@@ -51,20 +52,21 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (currentVolume < 10);
-         currentVolume = currentVolume + 1;
-        }
+        if (currentVolume < 10) ;
+        currentVolume = currentVolume + 1;
+    }
 
     public void increaseVolumeMax() {
-        if (currentVolume > 11);
+        if (currentVolume > 11) ;
         currentVolume = 10;
     }
+
     public void decreaseVolume() {
-        if (currentVolume > 0 ) {
-           currentVolume = currentVolume - 1;
-                        }
+        if (currentVolume > 0) {
+            currentVolume = currentVolume - 1;
         }
     }
+}
 
 
 
