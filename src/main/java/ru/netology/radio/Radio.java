@@ -57,7 +57,7 @@ public class Radio {
     }
 
     public void increaseVolumeMax() {
-        if (currentVolume > 11) ;
+        if (currentVolume >= 10) ;
         currentVolume = 10;
     }
 
