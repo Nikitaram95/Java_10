@@ -52,7 +52,7 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (currentVolume < 10) ;
+        if (currentVolume < 9) ;
         currentVolume = currentVolume + 1;
     }
 
